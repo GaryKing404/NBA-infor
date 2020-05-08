@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/basketballsym"
+                app:riv_is_circle="true" />
+
+            <TextView
+                android:id="@+id/race_time"
+                style="@style/TextStyle.Explain"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/xui_config_color_pure_black"
+                tools:text="比赛时间" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/race_image1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xui_ic_default_img" />
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/race_image2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xui_ic_default_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/race_team1"
+                style="@style/TextStyle.Content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/xui_config_color_pure_black"
+                tools:text="队伍1" />
+
+            <TextView
+                android:id="@+id/race_team2"
+                style="@style/TextStyle.Content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/xui_config_color_pure_black"
+                tools:text="队伍2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/race_score1"
+                style="@style/TextStyle.Content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/xui_config_color_pure_black"
+                tools:text="得分1" />
+
+            <TextView
+                android:id="@+id/race_score2"
+                style="@style/TextStyle.Content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/xui_config_color_pure_black"
+                tools:text="得分2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/race_complete"
+                style="@style/TextStyle.Content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/xui_config_color_pure_black"
+                tools:text="尚未进行" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

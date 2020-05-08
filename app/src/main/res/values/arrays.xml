@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2019 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<resources>
+
+    <string-array name="home_titles">
+        <item>@string/menu_liebiao</item>
+        <item>@string/menu_paihang</item>
+        <item>@string/menu_aiyuce</item>
+        <item>@string/menu_profile</item>
+    </string-array>
+
+
+    <string-array name="spinner_values">
+        <item>火箭</item>
+        <item>勇士</item>
+        <item>老鹰</item>
+        <item>黄蜂</item>
+        <item>骑士</item>
+        <item>猛龙</item>
+        <item>公牛</item>
+        <item>尼克斯</item>
+        <item>奇才</item>
+        <item>活塞</item>
+        <item>凯尔特人</item>
+        <item>魔术</item>
+        <item>步行者</item>
+        <item>篮网</item>
+        <item>热火</item>
+        <item>雄鹿</item>
+        <item>76人</item>
+        <item>爵士</item>
+        <item>马刺</item>
+        <item>快船</item>
+        <item>雷霆</item>
+        <item>国王</item>
+        <item>开拓者</item>
+        <item>灰熊</item>
+        <item>湖人</item>
+        <item>掘金</item>
+        <item>鹈鹕</item>
+        <item>太阳</item>
+        <item>森林狼</item>
+        <item>独行侠</item>
+    </string-array>
+
+    <!--  修改这里的图标  -->
+    <array name="grid_icons_entry">
+        <item>@color/app_color_theme_1</item>
+        <item>@color/app_color_theme_2</item>
+        <item>@color/app_color_theme_3</item>
+        <item>@color/app_color_theme_4</item>
+        <item>@color/app_color_theme_5</item>
+        <item>@color/app_color_theme_6</item>
+        <item>@color/app_color_theme_7</item>
+        <item>@color/app_color_theme_8</item>
+    </array>
+
+</resources>

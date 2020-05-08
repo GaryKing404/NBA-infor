@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_pic"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/xui_config_color_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/pic_choose"
+        style="@style/InfoItem"
+        android:layout_marginTop="26dp"
+        android:onClick="Choose"
+        app:sCenterTextColor="@color/xui_config_color_blue"
+        app:sCenterTextString="选择照片"
+        app:sDividerLineType="none" />
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/user_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="26dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_default_head"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/pic_change"
+        style="@style/InfoItem"
+        android:layout_marginTop="26dp"
+        android:onClick="Submit"
+        app:sCenterTextColor="@color/xui_config_color_blue"
+        app:sCenterTextString="确认修改"
+        app:sDividerLineType="none" />
+
+
+</LinearLayout>
