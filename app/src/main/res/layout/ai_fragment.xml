@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_centerInParent="true"
-        android:text="AIFragment" />
-</RelativeLayout>
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:text="请选择要预测的两个对战队伍" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="主场：" />
+
+        <Spinner
+            android:id="@+id/spinner_zhu"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/spinner_values" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="客场：" />
+
+        <Spinner
+            android:id="@+id/spinner_ke"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:entries="@array/spinner_values" />
+    </LinearLayout>
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        style="@style/ButtonView.Green"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_aiyc"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="AI预测" />
+
+</LinearLayout>
