@@ -1,9 +1,6 @@
 package com.example.utils;
 
-import android.widget.Toast;
-
 import com.blankj.utilcode.util.RegexUtils;
-import com.example.activity.RegisterActivity;
 
 public class Checkformat {
 

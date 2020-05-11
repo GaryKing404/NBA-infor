@@ -16,9 +16,7 @@ import java.util.List;
 
 import okhttp3.Response;
 
-/**
- * 这是封装OKHttp请求的演示代码
- */
+
 public class RaceOkHttp_AsyncDataSource implements IAsyncDataSource<List<RaceOverview>> {
     private int mPage;
     private int mMaxPage = 100;
@@ -50,7 +48,7 @@ public class RaceOkHttp_AsyncDataSource implements IAsyncDataSource<List<RaceOve
                 //Thread.sleep(2000);
                 //String result = Utils.fixJson(response.body().string());
                 String result = response.body().string();
-                System.out.println(result);
+                //System.out.println(result);
                 JSONObject object = new JSONObject(result);
                 JSONArray jsonArray = object.getJSONArray("gameSummaries");
                 List<RaceOverview> raceOverviews = new ArrayList<RaceOverview>();
@@ -60,13 +58,13 @@ public class RaceOkHttp_AsyncDataSource implements IAsyncDataSource<List<RaceOve
                 }
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
-                    if (!jsonObject.getBoolean("finish")) {
+                    if (jsonObject.getBoolean("finish")) {
                         raceOverviews.add(new RaceOverview(jsonObject.getInt("match_id"), Utils.getDate(jsonObject.getString("date")),
-                                jsonObject.getString("team1"), jsonObject.getString("team2"),
+                                Utils.getRealName(jsonObject.getString("team1")), Utils.getRealName(jsonObject.getString("team2")),
                                 jsonObject.getInt("score1"), jsonObject.getInt("score2")));
                     } else {
                         raceOverviews.add(new RaceOverview(jsonObject.getInt("match_id"), Utils.getDate(jsonObject.getString("date")),
-                                jsonObject.getString("team1"), jsonObject.getString("team2")));
+                                Utils.getRealName(jsonObject.getString("team1")), Utils.getRealName(jsonObject.getString("team2"))));
                     }
                 }
                 //raceOverviews.add(new RaceOverview(object.getString("time"), object.getString("team1"), object.getString("team2"), object.getInt("score1"), object.getInt("score2")));

@@ -87,8 +87,6 @@ public class MineFragment extends Fragment implements SuperTextView.OnSuperTextV
                 startActivity(intent);
                 break;
             case R.id.my_team:
-                intent = new Intent(getActivity(), ChangeInforActivity.class);
-                startActivity(intent);
                 break;
             default:
                 break;

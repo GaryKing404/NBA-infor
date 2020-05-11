@@ -1,19 +1,4 @@
-/*
- * Copyright (C) 2020 xuexiangjys(xuexiangjys@163.com)
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *       http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- */
+
 
 package com.example.utils;
 
@@ -29,12 +14,7 @@ import com.example.ruangong.R;
 import java.text.ParseException;
 import java.util.Date;
 
-/**
- * 工具类
- *
- * @author xuexiang
- * @since 2020-02-23 15:12
- */
+
 public final class Utils {
 
     private Utils() {
@@ -190,6 +170,74 @@ public final class Utils {
                 imageView.setImageResource(R.mipmap.yongshi);
                 break;
         }
+    }
+
+    public static String getRealName(String team_Name) {
+        switch (team_Name) {
+            case "多伦多猛龙":
+                return "猛龙";
+            case "洛杉矶快船":
+                return "快船";
+            case "萨克拉门托国王":
+                return "国王";
+            case "明尼苏达森林狼":
+                return "森林狼";
+            case "孟菲斯灰熊":
+                return "灰熊";
+            case "费城76人":
+                return "76人";
+            case "犹他爵士":
+                return "爵士";
+            case "俄克拉荷马城雷霆":
+                return "雷霆";
+            case "圣安东尼奥马刺":
+                return "马刺";
+            case "波特兰开拓者":
+                return "开拓者";
+            case "克利夫兰骑士":
+                return "骑士";
+            case "华盛顿奇才":
+                return "奇才";
+            case "亚特兰大老鹰":
+                return "老鹰";
+            case "新奥尔良鹈鹕":
+                return "鹈鹕";
+            case "丹佛掘金":
+                return "掘金";
+            case "布鲁克林篮网":
+                return "篮网";
+            case "夏洛特黄蜂":
+                return "黄蜂";
+            case "金州勇士":
+                return "勇士";
+            case "印第安纳步行者":
+                return "步行者";
+            case "奥兰多魔术":
+                return "魔术";
+            case "密尔沃基雄鹿":
+                return "雄鹿";
+            case "菲尼克斯太阳":
+                return "太阳";
+            case "达拉斯独行侠":
+                return "独行侠";
+            case "波士顿凯尔特人":
+                return "凯尔特人";
+            case "休斯顿火箭":
+                return "火箭";
+            case "芝加哥公牛":
+                return "公牛";
+            case "纽约尼克斯":
+                return "尼克斯";
+            case "洛杉矶湖人":
+                return "湖人";
+            case "底特律活塞":
+                return "活塞";
+            case "迈阿密热火":
+                return "热火";
+            default:
+                return "梦之队?";
+        }
+
     }
 
     public static String fixJson(String injson) {

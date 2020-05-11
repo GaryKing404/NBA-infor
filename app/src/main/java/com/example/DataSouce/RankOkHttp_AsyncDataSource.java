@@ -1,7 +1,6 @@
 package com.example.DataSouce;
 
 import com.example.Bean.RankTeam;
-import com.example.utils.Utils;
 import com.shizhefei.mvc.IAsyncDataSource;
 import com.shizhefei.mvc.RequestHandle;
 import com.shizhefei.mvc.ResponseSender;
@@ -47,7 +46,7 @@ public class RankOkHttp_AsyncDataSource implements IAsyncDataSource<List<RankTea
                 List<RankTeam> rankTeams = new ArrayList<>();
                 //String result = Utils.fixJson(response.body().string());
                 String result = response.body().string();
-                System.out.println(result);
+                //System.out.println(result);
                 JSONObject object = new JSONObject(result);
                 JSONArray jsonArray = object.getJSONArray("teamRanks");
 

@@ -1,8 +1,5 @@
 package com.example.Bean;
 
-/**
- * Created by moos on 2018/4/20.
- */
 
 public class ReplyDetailBean {
     private String user_name;

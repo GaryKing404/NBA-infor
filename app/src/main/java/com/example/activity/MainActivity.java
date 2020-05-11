@@ -31,6 +31,7 @@ import com.example.fragment.MainFragment;
 import com.example.fragment.MineFragment;
 import com.example.fragment.RankFragment;
 import com.example.ruangong.R;
+import com.example.test.SearchDemo;
 import com.example.utils.Utils;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -159,7 +160,11 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
                 drawerLayout.closeDrawers();
                 return handleNavigationItemSelected(menuItem);
             } else {
-                Toast.makeText(this, "点击了:" + menuItem.getTitle(), Toast.LENGTH_SHORT).show();
+                if (menuItem.getTitle().equals("搜索")) {
+                    //Toast.makeText(this, "点击了:" + menuItem.getTitle(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(this, SearchDemo.class);
+                    startActivity(intent);
+                }
             }
             return true;
         });
@@ -327,7 +332,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
 
         protected void onPostExecute(Object o) {
             String result = (String) o;
-            System.out.println(result);
+            //System.out.println(result);
             if (result.contains("team")) {
                 try {
                     JSONObject jsonObject = new JSONObject(result);

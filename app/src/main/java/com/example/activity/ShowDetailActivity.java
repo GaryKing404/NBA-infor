@@ -48,9 +48,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/**
- * by moos on 2018/04/20
- */
+
 public class ShowDetailActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "ShowDetailActivity";
     private Toolbar toolbar;

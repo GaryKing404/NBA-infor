@@ -23,13 +23,6 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-/**
- * Author: Moos
- * E-mail: moosphon@gmail.com
- * Date:  18/4/20.
- * Desc: 评论与回复列表的适配器
- */
-
 public class CommentExpandAdapter extends BaseExpandableListAdapter {
     private static final String TAG = "CommentExpandAdapter";
     private List<CommentDetailBean> commentBeanList;

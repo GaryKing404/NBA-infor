@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.ruangong"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -85,5 +85,7 @@ dependencies {
 
 
     compile 'com.github.huangyanbin:SmartTable:2.2.0'
+
+    compile 'com.carson_ho:SearchLayout:1.0.1'
 
 }
